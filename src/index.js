@@ -56,6 +56,11 @@ dropdown.addEventListener("change",(e)=>{
     {breed.innerHTML+=`${keys[i]}`;
     breeds.appendChild(breed);}
   }//end of for loop
+  for(li of listBreeds){
+  li.addEventListener("click",(e)=>{
+  e.target.style.color="red";
+  })
+  };
 });
 })
 });
